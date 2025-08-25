@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Medio Ambiente</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1 data-es="Cuidemos el Medio Ambiente" data-en="Protect the Environment">
+      Cuidemos el Medio Ambiente
+    </h1>
+    <p data-es="Un planeta, un futuro" data-en="One planet, one future">Un planeta, un futuro</p>
+
+    <div class="top-buttons">
+      <button id="modo-btn">🌙 Modo Oscuro</button>
+      <select id="lang-select">
+        <option value="es">🇪🇸 Español</option>
+        <option value="en">🇺🇸 English</option>
+      </select>
+    </div>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="#problemas" data-es="Problemas" data-en="Problems">Problemas</a></li>
+      <li><a href="#soluciones" data-es="Soluciones" data-en="Solutions">Soluciones</a></li>
+      <li><a href="#recursos" data-es="Recursos" data-en="Resources">Recursos</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <section id="introduccion">
+      <h2 data-es="¿Por qué es importante?" data-en="Why is it important?">¿Por qué es importante?</h2>
+      <p data-es="El medio ambiente es esencial para la vida. Cuidarlo es nuestro deber."
+         data-en="The environment is essential for life. Taking care of it is our duty.">
+        El medio ambiente es esencial para la vida. Cuidarlo es nuestro deber.
+      </p>
+    </section>
+
+    <section id="problemas">
+      <h2 data-es="Problemas Ambientales" data-en="Environmental Problems">Problemas Ambientales</h2>
+      <ul>
+        <li data-es="Contaminación del aire" data-en="Air pollution">Contaminación del aire</li>
+        <li data-es="Deforestación" data-en="Deforestation">Deforestación</li>
+        <li data-es="Cambio climático" data-en="Climate change">Cambio climático</li>
+      <img src="data:image/jpeg;base64,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" alt="">
+      </ul>
+    </section>
+
+    <section id="soluciones">
+      <h2 data-es="Soluciones" data-en="Solutions">Soluciones</h2>
+      <ul>
+        <li data-es="Reciclar y reutilizar" data-en="Recycle and reuse">Reciclar y reutilizar</li>
+        <li data-es="Usar transporte público" data-en="Use public transport">Usar transporte público</li>
+        <li data-es="Ahorrar energía" data-en="Save energy">Ahorrar energía</li>
+      </ul>
+    </section>
+
+    <section id="recursos">
+      <h2 data-es="Recursos útiles" data-en="Useful Resources">Recursos útiles</h2>
+      <ul>
+        <li><a href="https://www.wwf.org" target="_blank">WWF</a></li>
+        <li><a href="https://www.greenpeace.org" target="_blank">Greenpeace</a></li>
+       <li></li> El medio ambiente es el entorno que nos rodea y que incluye elementos naturales (aire, agua, tierra, seres vivos) y los creados por el ser humano (ciudades, edificios), los cuales interactúan y forman un sistema dinámico. Es un espacio donde se desarrollan las actividades de las sociedades y se satisfacen sus necesidades, pero también es un sistema complejo que puede verse afectado por acciones como la contaminación, el cambio climático y la pérdida de biodiversidad </ul>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRwzk7BRUn9rCQRCWWJ0t0CvdQnKoA81lzZcw&s" alt="">
+      </section>
+    <section id="contacto">
+        <h2 data-es="Contacto" data-en="Contact">Contacto</h2>
+        <form id="contact-form">
+          <form action="/ruta-a-tu-servidor" method="POST">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required><br><br>
+        
+            <label for="email">Correo electrónico:</label>
+            <input type="email" id="email" name="email" required><br><br>
+           <label for="mensaje">Mensaje:</label><br>
+            <textarea id="mensaje" name="mensaje" rows="4" cols="50" required></textarea><br><br>
+           <button type="submit">Enviar</button>
+           <button type="submit">Enviar</button>
+           </form>
+      </section>
+      
+  </main>
+
+  <footer>
+    <p data-es="Todos los derechos reservados © 2025| german rosales - matias pereyra" data-en="All rights reserved © 2025 german rosales - matias pereyra"</p>">
+      Todos los derechos reservados © 2025|german rosales - matias pereyra 
+    </p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
